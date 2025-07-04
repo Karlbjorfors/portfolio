@@ -1,10 +1,17 @@
-import React from 'react'
+"use client";
+import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
-    <div>
-      <h1>home</h1>
-    </div>
+    <motion.section 
+      initial={{ opacity: 0}}
+      animate={{ 
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }     
+      }}
+    >
+      home
+    </motion.section>
   );
 };
 
