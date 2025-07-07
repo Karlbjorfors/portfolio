@@ -1,13 +1,13 @@
 "use client";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <motion.section 
-      initial={{ opacity: 0}}
-      animate={{ 
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }     
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
     >
       Contact
@@ -15,4 +15,4 @@ const Contact = () => {
   );
 };
 
-export default Contact
+export default Contact;
