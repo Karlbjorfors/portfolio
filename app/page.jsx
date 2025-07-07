@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import { MdArrowOutward } from "react-icons/md";
+import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 // components
 import Blob from "@/components/Blob";
 import Image from "next/image";
@@ -18,7 +20,7 @@ const Home = () => {
     >
       <div className="flex flex-col xl:flex-row items-center justify-between w-full">
         {/* text */}
-        <div className="w-full xl:w-[550px]">
+        <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left">
           <h1 className="h1 flex-1 mb-[28px]">
             Hi! I'm Kalle, <br />
             <TypeAnimation
@@ -36,6 +38,30 @@ const Home = () => {
             corporis odio ut cumque quas iure! Quisquam, praesentium! Dolorum
             voluptas sint reiciendis!
           </p>
+          <button className="btn btn-lg btn-accent mb-16">
+            <div className="flex items-center gap-3">
+              <span>Let's talk.</span>
+              <MdArrowOutward className="text-xl" />
+            </div>
+          </button>
+          {/* contact info */}
+          <div className="flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8">
+            {/* phone */}
+            <div className="flex items-center gap-4 text-lg">
+              <span className="text-accent">
+                <HiOutlinePhone className="text-xl" />
+              </span>
+              <span>+46 768 70 89 35</span>
+            </div>
+            {/* email */}
+            <div className="flex items-center gap-4 text-lg">
+              <span className="text-accent">
+                <HiOutlineMail className="text-xl" />
+              </span>
+              <span>kallebjorfors@gmail.com</span>
+            </div>
+          </div>
+          {/* social links */}
         </div>
 
         {/* blob and image */}
