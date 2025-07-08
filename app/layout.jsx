@@ -4,6 +4,7 @@ import "./globals.css";
 import MainNav from "@/components/MainNav";
 import PageTransition from "@/components/PageTransition";
 import RectangleTransition from "@/components/RectangleTransition";
+import Gradient from "@/components/Gradient";
 
 const sometypeMono = Sometype_Mono({
   variable: "--font-geist-mono",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${sometypeMono.variable} antialiased overflow-hidden relative`}
       >
+        <Gradient />
         <RectangleTransition />
         <PageTransition>
           <div className="flex">
