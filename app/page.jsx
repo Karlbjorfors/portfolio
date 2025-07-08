@@ -8,6 +8,7 @@ import Blob from "@/components/Blob";
 import Image from "next/image";
 import avatarImg from "@/public/assets/avatar.png";
 import Socials from "@/components/Socials";
+import Pattern from "@/components/Pattern";
 
 const Home = () => {
   return (
@@ -19,6 +20,8 @@ const Home = () => {
       }}
       className="h-screen flex items-center"
     >
+      {/* pattern */}
+      <Pattern />
       <div className="flex flex-col xl:flex-row items-center justify-between w-full">
         {/* text */}
         <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left">
