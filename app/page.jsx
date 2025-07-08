@@ -7,6 +7,7 @@ import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 import Blob from "@/components/Blob";
 import Image from "next/image";
 import avatarImg from "@/public/assets/avatar.png";
+import Socials from "@/components/Socials";
 
 const Home = () => {
   return (
@@ -62,6 +63,7 @@ const Home = () => {
             </div>
           </div>
           {/* social links */}
+          <Socials />
         </div>
 
         {/* blob and image */}
