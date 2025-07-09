@@ -5,6 +5,7 @@ import MainNav from "@/components/MainNav";
 import PageTransition from "@/components/PageTransition";
 import RectangleTransition from "@/components/RectangleTransition";
 import Gradient from "@/components/Gradient";
+import Header from "@/components/Header";
 
 const sometypeMono = Sometype_Mono({
   variable: "--font-geist-mono",
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
               <MainNav />
             </div>
             <div className="w-full max-w-[1130px] px-[15px] mx-auto">
-              <header>header</header>
+              <Header />
               <div>{children}</div>
             </div>
           </div>
