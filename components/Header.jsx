@@ -49,7 +49,7 @@ const Header = () => {
                 </button>
                 <Socials
                   containerStyles="flex gap-4"
-                  iconStyles="bg-accent text-white hover:bg-accent-hover transition w-[40px] h-[40px] text-[20px] flex items-center rounded-full cursor-pointer"
+                  iconStyles="bg-accent text-white hover:bg-accent-hover transition w-[40px] h-[40px] text-[20px] flex items-center justify-center rounded-full cursor-pointer"
                 />
               </div>
             </SheetContent>
