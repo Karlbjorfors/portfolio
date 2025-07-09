@@ -9,21 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-scroll-area": "^1.2.9",
->>>>>>> Stashed changes
-=======
-    "@radix-ui/react-dialog": "^1.1.14",
->>>>>>> 7a97e0ac392dd1fa157ccbfd93a13f6da07a2ec8
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.0",
     "lucide-react": "^0.525.0",
     "next": "15.3.4",
     "react": "^19.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-type-animation": "^3.2.0",
