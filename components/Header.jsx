@@ -6,7 +6,7 @@ import { MdFileDownload } from "react-icons/md";
 import {
   Sheet,
   SheetContent,
-  SheetDiscription,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -35,9 +35,9 @@ const Header = () => {
                 <SheetTitle>
                   <Logo />
                 </SheetTitle>
-                <SheetDiscription className="sr-only">
+                <SheetDescription className="sr-only">
                   Navigation menu
-                </SheetDiscription>
+                </SheetDescription>
               </SheetHeader>
               <NavLinks containerStyles="flex flex-col gap-8 max-w-[100px]" />
               <div>
