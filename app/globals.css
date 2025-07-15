@@ -69,6 +69,7 @@ body {
 .btn-tertiary {
   @apply bg-tertiary hover:bg-tertiary-hover;
 }
+
 .btn-white {
   @apply bg-white hover:bg-white/90  text-primary;
 }
@@ -76,4 +77,10 @@ body {
 /* swiper css */
 .swiper {
   margin: 0 !important;
+}
+
+/* swiper bullets */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply bg-accent;
 }
