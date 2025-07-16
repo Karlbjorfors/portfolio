@@ -57,10 +57,17 @@ const About = () => {
                 <span className="text-accent">Kalle</span> Björfors
               </h2>
               <p className="max-w-[540px] mb-12">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Commodi ipsa ipsam rerum alias ab sapiente, facere esse a eum
-                doloremque aspernatur tempore distinctio assumenda dignissimos
-                vero! Illum laboriosam ea neque.
+                I’m an aspiring full-stack developer with a background in
+                kitchens and classrooms — now channeling that hands-on
+                experience into clean code and creative interfaces. Currently
+                enrolled in a programming course at Lexicon Malmö, I’m building
+                skills in frontend technologies like HTML, CSS, JavaScript and
+                React, while also working with C#, SQL and backend fundamentals.
+                I enjoy bridging design and functionality, and I’m always
+                curious to understand how everything connects behind the scenes.
+                Whether I’m debugging late at night or climbing walls on
+                weekends, I bring thoughtful energy, persistence, and a genuine
+                passion for development into everything I do.
               </p>
               <div className="flex flex-col items-start gap-16">
                 <Stats />

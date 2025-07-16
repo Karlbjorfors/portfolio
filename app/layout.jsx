@@ -13,7 +13,7 @@ const sometypeMono = Sometype_Mono({
 });
 
 export const metadata = {
-  title: "Karle Björfors | Portfolio",
+  title: "Karl Björfors | Portfolio",
   description:
     "Proffessional portfolio showcasing my work as a fullstack web developer and designer.",
 };
