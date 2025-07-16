@@ -12,12 +12,12 @@
   --breakpoint-2xl: 1520px;
 
   /* Colors */
-  --color-primary: #0ea5e9;
-  --color-secondary: #f97316;
-  --color-accent: #f59e0b;
-  --color-accent-hover: #f97316;
-  --color-tertiary: #f3f4f6;
-  --color-tertiary-hover: #e5e7eb;
+  --color-primary: #5A6572; /* Slate Backgrounds, cards, large text blocks */
+  --color-secondary: #2E3338; /* Charcoal Headers, footers, borders */
+  --color-accent: #1E88E5; /* Natural Blue Buttons, links, highlights */
+  --color-accent-hover: #266CA9; /* 25% darker than base Icons, hover states, subtle details */
+  --color-tertiary: #43A047; /* Fresh Green Icons, hover states, subtle details */
+  --color-tertiary-hover: #388E3C; /* 25% darker than base Backgrounds, cards, large text blocks */
 
   /* Fonts */
   --font-primary: "Sometype Mono";
@@ -25,7 +25,7 @@
 }
 
 body {
-  @apply font-primary bg-primary text-white leading-relaxed;
+  @apply font-primary bg-gradient-to-br from-white via-primary/50 to-accent/80 text-secondary leading-relaxed;
 }
 
 .h1 {

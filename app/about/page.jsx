@@ -27,20 +27,18 @@ const About = () => {
           {/* img & social */}
           <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative">
             <Image
-              src="/assets/avatar.png"
+              src="/assets/avatar2.png"
               width={320}
               height={496}
               alt=""
               className="z-20 relative"
             />
-            {/*  overlay */}
+            {/* overlay */}
             <div className="w-full h-[60px] absolute left-0 top-[420px] right-0 bg-gradient-to-t from-primary via-primary/90 z-30"></div>
-
             {/* blob */}
             <div className="absolute top-[80px] -left-[80px] z-10">
               <Blob containerStyles="w-[420px] h-[420px] " />
             </div>
-
             <Socials
               containerStyles="flex gap-4 z-40 w-max transform translate-x-[30px]"
               iconStyles="w-[48px] h-[48px] text-[22px] text-accent hover:text-accent-hover transition-all flex items-center justify-center rounded-full cursor-pointer"
@@ -57,17 +55,17 @@ const About = () => {
                 <span className="text-accent">Kalle</span> Björfors
               </h2>
               <p className="max-w-[540px] mb-12">
-                I’m an aspiring full-stack developer with a background in
+                I’m an aspiring fullstack developer with a background in
                 kitchens and classrooms — now channeling that hands-on
                 experience into clean code and creative interfaces. Currently
                 enrolled in a programming course at Lexicon Malmö, I’m building
                 skills in frontend technologies like HTML, CSS, JavaScript and
-                React, while also working with C#, SQL and backend fundamentals.
-                I enjoy bridging design and functionality, and I’m always
-                curious to understand how everything connects behind the scenes.
-                Whether I’m debugging late at night or climbing walls on
-                weekends, I bring thoughtful energy, persistence, and a genuine
-                passion for development into everything I do.
+                React, while also working with backend fundamentals, C#, SQL and
+                Python ML and AI. I enjoy bridging design and functionality, and
+                I’m always curious to understand how everything connects behind
+                the scenes. Whether I’m debugging late at night or climbing
+                walls on weekends, I bring thoughtful energy, persistence, and a
+                genuine passion for development into everything I do.
               </p>
               <div className="flex flex-col items-start gap-16">
                 <Stats />
