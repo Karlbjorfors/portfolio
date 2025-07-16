@@ -6,6 +6,7 @@ import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 // components
 import Blob from "@/components/Blob";
 import Image from "next/image";
+import Link from "next/link";
 import avatarImg from "@/public/assets/avatar.png";
 import Socials from "@/components/Socials";
 import Pattern from "@/components/Pattern";
@@ -28,26 +29,50 @@ const Home = () => {
           <h1 className="h1 flex-1 mb-[28px]">
             Hi! I'm Kalle, <br />
             <TypeAnimation
-              sequence={["Web Developer", 2000, "Web Designer", 2000]}
+              sequence={["Fullstack Developer", 2000, "Web Designer", 2000]}
               wrapper="span"
               speed={40}
-              className="text-accent"
+              className="text-accent whitespace-nowrap inline-block sm:w-52 md:w-60 lg:w-68 xl:w-76 2xl:w-80"
               repeat={Infinity}
               cursor={false}
             />
           </h1>
-          <p className="max-w-[500] mb-[44px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-            animi. Laboriosam illo ad adipisci corrupti fugit quasi sapiente,
-            corporis odio ut cumque quas iure! Quisquam, praesentium! Dolorum
-            voluptas sint reiciendis!
+          <p className="max-w-[500px] mb-8">
+            I’m currently training to become a fullstack developer and I'm
+            looking for an internship that will be my first step into the
+            industry.
           </p>
-          <button className="btn btn-lg btn-accent mb-16">
-            <div className="flex items-center gap-3">
-              <span>Let's talk.</span>
-              <MdArrowOutward className="text-xl" />
-            </div>
-          </button>
+          <p className="max-w-[500] mb-[44px]">
+            I’m proficient in HTML, CSS, JavaScript and React, and eager to
+            contribute to projects where user experience takes center stage.
+            With a background as both a chef and a teacher, I’m used to working
+            with a solution-oriented mindset, clear communication, and fast
+            learning. I bring dedication, reliability and a strong desire to
+            grow — together with a team that believes in potential. If you're
+            looking to strengthen your team with someone focused on the future,
+            I believe we could create something truly valuable together.
+          </p>
+          {/* buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 items-start mb-16">
+            {/* about button */}
+            <Link href="/about">
+              <button className="btn btn-lg btn-accent">
+                <div className="flex items-center gap-3">
+                  <span>About me.</span>
+                  <MdArrowOutward className="text-xl" />
+                </div>
+              </button>
+            </Link>
+            {/* work button */}
+            <Link href="/work">
+              <button className="btn btn-lg btn-white">
+                <div className="flex items-center gap-3">
+                  <span>Check out my Work</span>
+                  <MdArrowOutward className="text-xl" />
+                </div>
+              </button>
+            </Link>
+          </div>
           {/* contact info */}
           <div className="flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0">
             {/* phone */}
