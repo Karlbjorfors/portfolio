@@ -7,7 +7,7 @@ import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 import Blob from "@/components/Blob";
 import Image from "next/image";
 import Link from "next/link";
-import avatarImg from "@/public/assets/avatar.png";
+import avatarImg from "@/public/assets/avatar2.png";
 import Socials from "@/components/Socials";
 import Pattern from "@/components/Pattern";
 
@@ -43,7 +43,7 @@ const Home = () => {
             industry.
           </p>
           <p className="max-w-[500] mb-[44px]">
-            I’m proficient in HTML, CSS, JavaScript and React, and eager to
+            I’m proficient in HTML, CSS, JavaScript, Python and C#, and eager to
             contribute to projects where user experience takes center stage.
             With a background as both a chef and a teacher, I’m used to working
             with a solution-oriented mindset, clear communication, and fast
@@ -100,7 +100,7 @@ const Home = () => {
         {/* blob and image */}
         <div className="hidden xl:block flex-1 relative z-20">
           {/* blob */}
-          <Blob containerStyles="w-[560px] h-[560]" />
+          <Blob containerStyles="w-[520px] h-[520px]" />
           {/* avatar */}
           <Image
             src={avatarImg}
@@ -108,10 +108,10 @@ const Home = () => {
             width={440}
             height={600}
             quality={100}
-            className="absolute -top-16 left-[120px]"
+            className="absolute -top-10 left-[120px]"
           />
-          {/* overlay gradient */}
-          <div className="w-full h-[164px] absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary/40"></div>
+          {/* overlay
+          <div className="w-full h-[130px] absolute left-0 top-[420px] right-0 bg-gradient-to-tl from-accent/60 via-primary/90 to-transparent z-30"></div> */}
         </div>
       </div>
     </motion.section>

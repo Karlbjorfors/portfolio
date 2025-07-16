@@ -5,8 +5,9 @@ const Blob = ({ containerStyles }) => {
   return (
     <div className={containerStyles}>
       <svg viewBox="-10 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        {/* Main animated blob */}
         <motion.path
-          fill="#5810ff"
+          fill="#388E3C"
           transform="translate(100 100)"
           initial={{
             d: "M43.4,-61.5C55.6,-50.9,64.4,-37.3,71.5,-21.8C78.6,-6.2,84,11.4,79.7,26.3C75.5,41.2,61.6,53.4,46.7,62.3C31.8,71.2,15.9,76.9,0.5,76.1C-14.8,75.4,-29.6,68.3,-44.3,59.3C-58.9,50.3,-73.4,39.4,-81.7,24.1C-90.1,8.8,-92.3,-11,-86.1,-27.3C-79.9,-43.6,-65.1,-56.5,-49.4,-66C-33.6,-75.4,-16.8,-81.4,-0.6,-80.6C15.6,-79.7,31.2,-72.1,43.4,-61.5Z",
@@ -27,6 +28,223 @@ const Blob = ({ containerStyles }) => {
           transition={{
             repeat: Infinity,
             duration: 10,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Animated scattered leaves using motion.path */}
+        {/* Leaf 1 */}
+        <motion.path
+          d="M60,80 C55,72 50,72 50,80 C50,88 55,96 60,96 C65,96 70,88 70,80 C70,72 65,72 60,80 Z"
+          fill="#388E3C"
+          transform="rotate(25 60 80)"
+          animate={{
+            x: [0, 5, 0],
+            y: [0, -3, 0],
+            rotate: [25, 35, 25],
+            scale: [1, 1.1, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 8,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 2 */}
+        <motion.path
+          d="M150,70 C146,64 142,64 142,70 C142,76 146,82 150,82 C154,82 158,76 158,70 C158,64 154,64 150,70 Z"
+          fill="#388E3C"
+          transform="rotate(-30 150 70)"
+          animate={{
+            x: [0, -4, 0],
+            y: [0, 2, 0],
+            rotate: [-30, -40, -30],
+            scale: [1, 1.05, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 6,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 3 */}
+        <motion.path
+          d="M40,130 C36,125 33,125 33,130 C33,135 36,140 40,140 C44,140 47,135 47,130 C47,125 44,125 40,130 Z"
+          fill="#388E3C"
+          transform="rotate(60 40 130)"
+          animate={{
+            x: [0, 3, 0],
+            y: [0, -2, 0],
+            rotate: [60, 70, 60],
+            scale: [1, 1.08, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 7,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 4 */}
+        <motion.path
+          d="M170,120 C165,112 160,112 160,120 C160,128 165,136 170,136 C175,136 180,128 180,120 C180,112 175,112 170,120 Z"
+          fill="#388E3C"
+          transform="rotate(-15 170 120)"
+          animate={{
+            x: [0, -3, 0],
+            y: [0, 4, 0],
+            rotate: [-15, -25, -15],
+            scale: [1, 1.12, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 9,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 5 */}
+        <motion.path
+          d="M90,50 C86,44 82,44 82,50 C82,56 86,62 90,62 C94,62 98,56 98,50 C98,44 94,44 90,50 Z"
+          fill="#388E3C"
+          transform="rotate(45 90 50)"
+          animate={{
+            x: [0, 2, 0],
+            y: [0, -1, 0],
+            rotate: [45, 55, 45],
+            scale: [1, 1.07, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 5,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 6 */}
+        <motion.path
+          d="M130,160 C126,155 123,155 123,160 C123,165 126,170 130,170 C134,170 137,165 137,160 C137,155 134,155 130,160 Z"
+          fill="#388E3C"
+          transform="rotate(-45 130 160)"
+          animate={{
+            x: [0, -2, 0],
+            y: [0, 3, 0],
+            rotate: [-45, -55, -45],
+            scale: [1, 1.06, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 6.5,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 7 */}
+        <motion.path
+          d="M25,90 C21,84 17,84 17,90 C17,96 21,102 25,102 C29,102 33,96 33,90 C33,84 29,84 25,90 Z"
+          fill="#388E3C"
+          transform="rotate(15 25 90)"
+          animate={{
+            x: [0, 4, 0],
+            y: [0, -2, 0],
+            rotate: [15, 25, 15],
+            scale: [1, 1.09, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 7.5,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 8 */}
+        <motion.path
+          d="M180,85 C176,80 173,80 173,85 C173,90 176,95 180,95 C184,95 187,90 187,85 C187,80 184,80 180,85 Z"
+          fill="#388E3C"
+          transform="rotate(-60 180 85)"
+          animate={{
+            x: [0, -3, 0],
+            y: [0, 3, 0],
+            rotate: [-60, -70, -60],
+            scale: [1, 1.04, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 8.5,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 9 */}
+        <motion.path
+          d="M75,170 C70,162 65,162 65,170 C65,178 70,186 75,186 C80,186 85,178 85,170 C85,162 80,162 75,170 Z"
+          fill="#388E3C"
+          transform="rotate(30 75 170)"
+          animate={{
+            x: [0, 3, 0],
+            y: [0, -4, 0],
+            rotate: [30, 40, 30],
+            scale: [1, 1.11, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 9.5,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 10 */}
+        <motion.path
+          d="M155,150 C151,145 148,145 148,150 C148,155 151,160 155,160 C159,160 162,155 162,150 C162,145 159,145 155,150 Z"
+          fill="#388E3C"
+          transform="rotate(-75 155 150)"
+          animate={{
+            x: [0, -4, 0],
+            y: [0, 2, 0],
+            rotate: [-75, -85, -75],
+            scale: [1, 1.05, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 6.8,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 11 */}
+        <motion.path
+          d="M110,35 C106,29 102,29 102,35 C102,41 106,47 110,47 C114,47 118,41 118,35 C118,29 114,29 110,35 Z"
+          fill="#388E3C"
+          transform="rotate(80 110 35)"
+          animate={{
+            x: [0, 2, 0],
+            y: [0, -3, 0],
+            rotate: [80, 90, 80],
+            scale: [1, 1.08, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 7.2,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Leaf 12 */}
+        <motion.path
+          d="M195,100 C191,95 188,95 188,100 C188,105 191,110 195,110 C199,110 202,105 202,100 C202,95 199,95 195,100 Z"
+          fill="#388E3C"
+          transform="rotate(-10 195 100)"
+          animate={{
+            x: [0, -5, 0],
+            y: [0, 1, 0],
+            rotate: [-10, -20, -10],
+            scale: [1, 1.06, 1],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 8.8,
             ease: "easeInOut",
           }}
         />
