@@ -173,7 +173,7 @@ const Work = () => {
                                       return (
                                         <li
                                           key={index}
-                                          className="flex items-center gap-4 bg-[#a883ff]/13 h-[28px] px-[14px] rounded-full"
+                                          className="flex items-center gap-4 bg-accent/13 h-[28px] px-[14px] rounded-full"
                                         >
                                           {item}
                                         </li>
