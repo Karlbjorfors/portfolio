@@ -25,7 +25,7 @@
 }
 
 body {
-  @apply font-primary bg-gradient-to-br from-white via-primary/50 to-accent/80 text-secondary leading-relaxed;
+  @apply font-primary bg-gradient-to-br from-secondary via-primary/80 to-accent/85 text-white
 }
 
 .h1 {
