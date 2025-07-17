@@ -17,7 +17,7 @@ const Home = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
       }}
       className="h-screen flex items-center"
     >

@@ -117,7 +117,7 @@ const Work = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 1.4, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-screen flex items-center py-24 xl:py-0"
     >
@@ -167,13 +167,13 @@ const Work = () => {
                                 <h3 className="h3">{project.title}</h3>
                                 {/* tech */}
                                 <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
-                                  <p className="mb-4">Techmologies Used</p>
+                                  <p className="mb-4">Technologies Used</p>
                                   <ul className="flex flex-wrap gap-4">
                                     {project.tech.map((item, index) => {
                                       return (
                                         <li
                                           key={index}
-                                          className="flex items-center gap-4 bg-[#a883ff]/13 h-[28px] px-[14px] rounded-full"
+                                          className="flex items-center gap-4 bg-accent/13 h-[28px] px-[14px] rounded-full"
                                         >
                                           {item}
                                         </li>
