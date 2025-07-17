@@ -117,7 +117,7 @@ const Contact = () => {
                     >
                       <SelectValue placeholder="Choose here" />
                     </SelectTrigger>
-                    <SelectContent className="bg-black border-white/20">
+                    <SelectContent className="bg-primary border-white/20">
                       <SelectItem value="webdev">Web Development</SelectItem>
                       <SelectItem value="uiux">UI & UX Design</SelectItem>
                       <SelectItem value="logo">Logo Design</SelectItem>
