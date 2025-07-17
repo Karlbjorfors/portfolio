@@ -34,13 +34,13 @@ const About = () => {
               className="z-20 relative"
             />
             {/* overlay */}
-            <div className="w-full h-[60px] absolute left-0 top-[420px] right-0 bg-gradient-to-t from-primary via-primary/90 z-30"></div>
+            <div className="w-full h-[70px] rounded-lg absolute left-0 top-[410px] right-0 bg-gradient-to-t from-secondary via-secondary/90 z-30"></div>
             {/* blob */}
             <div className="absolute top-[80px] -left-[80px] z-10">
               <Blob containerStyles="w-[420px] h-[420px] " />
             </div>
             <Socials
-              containerStyles="flex gap-4 z-40 w-max transform translate-x-[30px]"
+              containerStyles="flex gap-4 z-40 w-max transform translate-y-[-10px] items-center justify center"
               iconStyles="w-[48px] h-[48px] text-[22px] text-accent hover:text-accent-hover transition-all flex items-center justify-center rounded-full cursor-pointer"
             />
           </div>

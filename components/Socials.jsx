@@ -3,23 +3,28 @@ import {
   BiLogoInstagramAlt,
   BiLogoDribbble,
   BiLogoLinkedin,
+  BiLogoGithub,
 } from "react-icons/bi";
 
 const socials = [
-  {
-    icon: <BiLogoFacebook />,
-    path: "",
-  },
-  {
-    icon: <BiLogoInstagramAlt />,
-    path: "",
-  },
+  // {
+  //   icon: <BiLogoFacebook />,
+  //   path: "",
+  // },
+  // {
+  //   icon: <BiLogoInstagramAlt />,
+  //   path: "",
+  // },
   {
     icon: <BiLogoDribbble />,
     path: "",
   },
   {
     icon: <BiLogoLinkedin />,
+    path: "",
+  },
+  {
+    icon: <BiLogoGithub />,
     path: "",
   },
 ];
