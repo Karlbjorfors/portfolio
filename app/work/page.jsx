@@ -167,7 +167,7 @@ const Work = () => {
                                 <h3 className="h3">{project.title}</h3>
                                 {/* tech */}
                                 <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
-                                  <p className="mb-4">Techmologies Used</p>
+                                  <p className="mb-4">Technologies Used</p>
                                   <ul className="flex flex-wrap gap-4">
                                     {project.tech.map((item, index) => {
                                       return (
