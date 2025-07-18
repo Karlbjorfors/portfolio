@@ -70,7 +70,7 @@ const projects = [
   {
     id: 6,
     category: "frontend",
-    title: "Cakery",
+    title: "Portfolio",
     description: "A personal portfolio website to showcase my work and skills.",
     image: "/assets/work/thumb1.png",
     link: "",
@@ -191,7 +191,7 @@ const Work = () => {
                                   </Link>
                                   <Link href={project.link}>
                                     <button className="btn btn-sm btn-white flex gap-2">
-                                      <MdArrowOutward className="text-xl" />
+                                      <FaGithub className="text-xl" />
                                       <span>Github Repository</span>
                                     </button>
                                   </Link>
