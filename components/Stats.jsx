@@ -9,7 +9,7 @@ const Stats = () => {
           <div>+</div>
         </div>
         <span>
-          Years <br /> experience
+          Years of <br /> experience
         </span>
       </div>
 

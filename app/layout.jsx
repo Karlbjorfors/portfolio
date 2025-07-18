@@ -1,5 +1,6 @@
 import { Sometype_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 // components
 import MainNav from "@/components/MainNav";
 import PageTransition from "@/components/PageTransition";
@@ -27,6 +28,8 @@ export default function RootLayout({ children }) {
         <Gradient />
         <RectangleTransition />
         <PageTransition>
+          <Analytics />
+          {/* header */}
           <div className="flex">
             {/* Main nav */}
             <div className="hidden 2xl:flex w-[285px] h-screen bg-secondary">
