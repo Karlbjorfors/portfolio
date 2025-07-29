@@ -49,13 +49,14 @@ const projects = [
   },
   {
     id: 4,
-    category: "backend",
-    title: "Pokemon Rewiever Database",
-    description: "A personal portfolio website to showcase my work and skills.",
+    category: "frontend",
+    title: "Cakery Mini Project",
+    description:
+      "Modern Responsive Website featuring dynamic header/footer, intuitive dropdown navigation, and dedicated product sections for Cupcakes and Wedding Cakes. Includes a contact form and social media integration for seamless user engagement across devices.",
     image: "/assets/work/thumb4.png",
-    link: "",
-    github: "",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    link: "https://karlbjorfors.github.io/CakeryMiniProject/",
+    github: "https://github.com/Karlbjorfors/CakeryMiniProject.git",
+    tech: ["JavaScript", "CSS", "HTML"],
   },
   {
     id: 5,

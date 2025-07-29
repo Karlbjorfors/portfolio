@@ -27,7 +27,7 @@ const About = () => {
           {/* img & social */}
           <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative">
             <Image
-              src="/assets/avatar2.png"
+              src="/assets/avatar3.png"
               width={320}
               height={496}
               alt=""

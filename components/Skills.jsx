@@ -5,10 +5,15 @@ import {
   RiCss3Fill,
   RiJavascriptFill,
   RiNodejsFill,
-  RiGitFill,
   RiGithubFill,
   RiTailwindCssFill,
+  RiDatabase2Fill,
 } from "react-icons/ri";
+import { VscAzure, VscAzureDevops } from "react-icons/vsc";
+import { FaPython } from "react-icons/fa";
+import { SiSpyderide, SiOllama, SiShadcnui } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
+import { PiFileSqlFill } from "react-icons/pi";
 
 import {
   Tooltip,
@@ -37,6 +42,54 @@ const skills = [
   {
     icon: <RiTailwindCssFill />,
     name: "Tailwind CSS",
+  },
+  {
+    icon: <RiJavascriptFill />,
+    name: "JavaScript",
+  },
+  {
+    icon: <RiNodejsFill />,
+    name: "Node.js",
+  },
+  {
+    icon: <RiGithubFill />,
+    name: "GitHub",
+  },
+  {
+    icon: <VscAzure />,
+    name: "Azure Cloud",
+  },
+  {
+    icon: <VscAzureDevops />,
+    name: "Azure DevOps",
+  },
+  {
+    icon: <FaPython />,
+    name: "Python",
+  },
+  {
+    icon: <SiSpyderide />,
+    name: "Spyder IDE",
+  },
+  {
+    icon: <SiOllama />,
+    name: "Ollama",
+  },
+  {
+    icon: <TbBrandCSharp />,
+    name: "CSharp",
+  },
+  {
+    icon: <SiShadcnui />,
+    name: "ShadCN UI",
+  },
+  {
+    icon: <PiFileSqlFill />,
+    name: "SQL",
+  },
+  {
+    icon: <RiDatabase2Fill />,
+    name: "Database Management",
   },
 ];
 

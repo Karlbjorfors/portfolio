@@ -7,7 +7,7 @@ import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 import Blob from "@/components/Blob";
 import Image from "next/image";
 import Link from "next/link";
-import avatarImg from "@/public/assets/avatar2.png";
+import avatarImg from "@/public/assets/avatar3.png";
 import Socials from "@/components/Socials";
 import Pattern from "@/components/Pattern";
 
