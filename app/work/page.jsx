@@ -29,13 +29,13 @@ const projects = [
   },
   {
     id: 2,
-    category: "frontend",
+    category: "fullstack",
     title: "FiJoKa",
     description: "A personal portfolio website to showcase my work and skills.",
     image: "/assets/work/thumb2.png",
     link: "",
     github: "",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    tech: ["Next.js", "Tailwind CSS", "Firebase"],
   },
   {
     id: 3,
@@ -53,15 +53,15 @@ const projects = [
     title: "Cakery Mini Project",
     description:
       "Modern Responsive Website featuring dynamic header/footer, intuitive dropdown navigation, and dedicated product sections for Cupcakes and Wedding Cakes. Includes a contact form and social media integration for seamless user engagement across devices.",
-    image: "/assets/work/thumb4.png",
+    image: "/assets/work/thumb41.png",
     link: "https://karlbjorfors.github.io/CakeryMiniProject/",
     github: "https://github.com/Karlbjorfors/CakeryMiniProject.git",
     tech: ["JavaScript", "CSS", "HTML"],
   },
   {
     id: 5,
-    category: "frontend",
-    title: "Cakery",
+    category: "backend",
+    title: "Pokemon rating database",
     description: "A personal portfolio website to showcase my work and skills.",
     image: "/assets/work/thumb5.png",
     link: "",
@@ -190,7 +190,7 @@ const Work = () => {
                                       <span>Live Project</span>
                                     </button>
                                   </Link>
-                                  <Link href={project.link}>
+                                  <Link href={project.github}>
                                     <button className="btn btn-sm btn-white flex gap-2">
                                       <FaGithub className="text-xl" />
                                       <span>Github Repository</span>
