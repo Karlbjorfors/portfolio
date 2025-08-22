@@ -22,7 +22,7 @@ const projects = [
     category: "uiux",
     title: "Portfolio",
     description: "A personal portfolio website to showcase my work and skills.",
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/portfolio.png",
     link: "",
     github: "",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
@@ -32,28 +32,44 @@ const projects = [
     category: "fullstack",
     title: "FiJoKa",
     description: "A personal portfolio website to showcase my work and skills.",
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/fijoka.png",
     link: "",
-    github: "",
-    tech: ["Next.js", "Tailwind CSS", "Firebase"],
+    github: "https://github.com/Karlbjorfors/FiJoKa.git",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Firebase",
+      "RESTful APIs",
+      "Express.js",
+      "Node.js",
+    ],
   },
   {
     id: 3,
     category: "fullstack",
     title: "ScanTheScam",
-    description: "A personal portfolio website to showcase my work and skills.",
-    image: "/assets/work/thumb3.png",
+    description:
+      "The 'Scan the Scam' project involved the development of a web application whose primary function is to create a responsive web application –think 'Shazam for food ingredients' – that helps health-conscious consumers quickly scan products using a webcam or mobile camera. The application is designed to help users track nutrition, follow specific diets, and avoid unhealthy additives, sugar, and ultra-processed foods with the assistance of an AI chatbot that helps the user summarize and provide advice.. This core functionality implies a robust technical architecture capable of processing input from scanning, interpreting data, and presenting relevant information to the user. The project had a wide array of potential technologies for both its frontend and backend components, allowing for strategic choices based on project requirements and developer expertise. The development was structured as a prototype phase, planned for 2 weeks. This required a detailed weekly and daily plan.",
+    image: "/assets/work/scanthescam.png",
     link: "",
-    github: "",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/joipoi/JoKaScan.git",
+    tech: [
+      "React",
+      "C# .NET",
+      "SQL Server",
+      "Entity Framewok",
+      "RESTful APIs",
+      "Cloud/AI",
+      "Authentication & Security (JWT)",
+    ],
   },
   {
     id: 4,
     category: "frontend",
-    title: "Cakery Mini Project",
+    title: "Cakery Project",
     description:
-      "Modern Responsive Website featuring dynamic header/footer, intuitive dropdown navigation, and dedicated product sections for Cupcakes and Wedding Cakes. Includes a contact form and social media integration for seamless user engagement across devices.",
-    image: "/assets/work/thumb41.png",
+      "Cakery-projekt: This project involved creating a foundational website for Munamii Cakery, a business specializing in cupcakes and wedding cakes, previously operating primarily through Instagram. The client's main objective was to establish a more formal web presence to better customize how information is presented to customers and to assess consumer response before committing to a more extensive e-commerce solution. The website was required to be fully functional and user-friendly across various devices, including mobile phones and desktop computers.",
+    image: "/assets/work/cakery.png",
     link: "https://karlbjorfors.github.io/CakeryMiniProject/",
     github: "https://github.com/Karlbjorfors/CakeryMiniProject.git",
     tech: ["JavaScript", "CSS", "HTML"],
@@ -62,11 +78,12 @@ const projects = [
     id: 5,
     category: "backend",
     title: "Pokemon rating database",
-    description: "A personal portfolio website to showcase my work and skills.",
-    image: "/assets/work/thumb5.png",
+    description:
+      "During a playthrough of Pokémon FireRed on Gameboy Advance i felt i wanted to start reviewing Pokémons so i made this simple database to store the reviews.",
+    image: "/assets/work/pokemonrating.png",
     link: "",
     github: "",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    tech: ["SQL", "Tailwind CSS", "Framer Motion"],
   },
   {
     id: 6,
@@ -110,7 +127,7 @@ const projects = [
   },
 ];
 
-const categories = ["frontend", "backend", "fullstack", "uiux"];
+const categories = ["fullstack", "frontend", "backend", "uiux"];
 
 const Work = () => {
   return (
@@ -154,7 +171,7 @@ const Work = () => {
                   <Swiper
                     modules={[Pagination]}
                     pagination={{ clickable: true, dynamicBullets: true }}
-                    className="h-max xl:h-[460px]"
+                    className="h-max xl:h-[560px]"
                   >
                     {projects
                       .filter((project) => project.category === category)
@@ -166,6 +183,10 @@ const Work = () => {
                               <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-none">
                                 {/* title */}
                                 <h3 className="h3">{project.title}</h3>
+                                {/* description */}
+                                <p className="text-white/80 leading-relaxed">
+                                  {project.description}
+                                </p>
                                 {/* tech */}
                                 <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
                                   <p className="mb-4">Technologies Used</p>
