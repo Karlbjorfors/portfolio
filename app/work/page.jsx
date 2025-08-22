@@ -22,7 +22,9 @@ const projects = [
     category: "frontend",
     title: "Portfolio",
     description: `A sleek, modern portfolio website built to showcase my fullstack development skills and demonstrate my growth as a developer to potential employers. Designed with a focus on user experience and modern aesthetics, this responsive web application highlights my expertise in cutting-edge technologies including Next.js, React, TypeScript, and Tailwind CSS.
+
     The portfolio features an intuitive interface with smooth animations powered by Framer Motion, interactive project galleries using Swiper.js, and seamless navigation across all devices. Built with modern development practices including component-based architecture, accessibility-first design using Shadcn UI, and optimized performance through Next.js server-side rendering.
+    
     This project demonstrates my ability to create professional, production-ready applications while showcasing my journey toward becoming a fullstack developer with interests in AI implementations and modern web technologies.`,
     image: "/assets/work/portfolio.png",
     link: "",
@@ -40,8 +42,12 @@ const projects = [
     id: 2,
     category: "fullstack",
     title: "ScanTheScam",
-    description:
-      "The 'Scan the Scam' project involved the development of a web application whose primary function is to create a responsive web application –think 'Shazam for food ingredients' – that helps health-conscious consumers quickly scan products using a webcam or mobile camera. The application is designed to help users track nutrition, follow specific diets, and avoid unhealthy additives, sugar, and ultra-processed foods with the assistance of an AI chatbot that helps the user summarize and provide advice.. This core functionality implies a robust technical architecture capable of processing input from scanning, interpreting data, and presenting relevant information to the user. The project had a wide array of potential technologies for both its frontend and backend components, allowing for strategic choices based on project requirements and developer expertise. The development was structured as a prototype phase, planned for 2 weeks. This required a detailed weekly and daily plan.",
+    description: `The 'Scan the Scam' project involved the development of a web application whose primary function is to create a responsive web application –think 'Shazam for food ingredients' – that helps health-conscious consumers quickly scan products using a webcam or mobile camera. The application is designed to help users track nutrition, follow specific diets, and avoid unhealthy additives, sugar, and ultra-processed foods with the assistance of an AI chatbot that helps the user summarize and provide advice.
+
+    This core functionality implies a robust technical architecture capable of processing input from scanning, interpreting data, and presenting relevant information to the user. 
+    The project had a wide array of potential technologies for both its frontend and backend components, allowing for strategic choices based on project requirements and developer expertise. 
+    
+    The development was structured as a prototype phase by two developers, planned for 2 weeks. This required a detailed and dynamic weekly and daily plan followed by daily stand-ups to make sure the work was going in the right direction and all obstacles gets removed quickly.`,
     image: "/assets/work/scanthescam.png",
     link: "",
     github: "https://github.com/joipoi/JoKaScan.git",
