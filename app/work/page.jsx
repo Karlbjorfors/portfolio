@@ -19,30 +19,13 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     id: 1,
-    category: "uiux",
+    category: "frontend",
     title: "Portfolio",
     description: "A personal portfolio website to showcase my work and skills.",
     image: "/assets/work/portfolio.png",
     link: "",
     github: "",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-  },
-  {
-    id: 3,
-    category: "fullstack",
-    title: "FiJoKa",
-    description: "A personal portfolio website to showcase my work and skills.",
-    image: "/assets/work/fijoka.png",
-    link: "",
-    github: "https://github.com/Karlbjorfors/FiJoKa.git",
-    tech: [
-      "Next.js",
-      "Tailwind CSS",
-      "Firebase",
-      "RESTful APIs",
-      "Express.js",
-      "Node.js",
-    ],
   },
   {
     id: 2,
@@ -63,6 +46,24 @@ const projects = [
       "Authentication(JWT)",
     ],
   },
+  {
+    id: 3,
+    category: "fullstack",
+    title: "FiJoKa",
+    description: "A personal portfolio website to showcase my work and skills.",
+    image: "/assets/work/fijoka.png",
+    link: "",
+    github: "https://github.com/Karlbjorfors/FiJoKa.git",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Firebase",
+      "RESTful APIs",
+      "Express.js",
+      "Node.js",
+    ],
+  },
+
   {
     id: 4,
     category: "frontend",
@@ -127,7 +128,7 @@ const projects = [
   },
 ];
 
-const categories = ["fullstack", "frontend", "backend", "uiux"];
+const categories = ["fullstack", "frontend", "backend"];
 
 const Work = () => {
   return (
@@ -158,7 +159,7 @@ const Work = () => {
                   value={category}
                   className="capitalize border border-white/10 data-[state=active]:bg-accent h-[48px] px-6 rounded-full cursor-pointer"
                 >
-                  {category === "uiux" ? "UI/UX Design" : category}
+                  {category}
                 </TabsTrigger>
               );
             })}
@@ -232,7 +233,7 @@ const Work = () => {
                                   src={project.image}
                                   alt={project.image}
                                   fill
-                                  className="object-cover"
+                                  className="object-cover object-top"
                                 />
                               </div>
                             </div>
