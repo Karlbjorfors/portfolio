@@ -14,18 +14,28 @@ import { ImQuotesLeft } from "react-icons/im";
 const testimonials = [
   {
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing consectetur elit.",
-    name: "John Doe",
+      "Working with Kalle is effortless — he's friendly, dedicated, reliable, and always brings a sense of warmth and humor to the team.",
+    name: "Lisa, coach and coordinator at Iris Hadar",
   },
   {
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing consectetur elit.",
-    name: "John Doe",
+      "Experience in problem-solving under pressure, teamwork, and clear communication  – whether it's with students, colleagues, or users.",
+    name: "Kalle",
   },
   {
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing consectetur elit.",
-    name: "John Doe",
+      "I am structured, curious, and stubborn enough to debug until it works (with coffee &/ tea as my faithful companion).",
+    name: "Kalle",
+  },
+  {
+    message:
+      "Looking for a practical developer with a heart for code and an eye for design? Then we can create something fun together!",
+    name: "Kalle",
+  },
+  {
+    message:
+      "Looking for a curious junior with finesse and speed? I'm ready to build something really great with you.",
+    name: "Kalle",
   },
 ];
 

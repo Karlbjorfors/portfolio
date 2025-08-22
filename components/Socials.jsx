@@ -1,31 +1,13 @@
-import {
-  BiLogoFacebook,
-  BiLogoInstagramAlt,
-  BiLogoDribbble,
-  BiLogoLinkedin,
-  BiLogoGithub,
-} from "react-icons/bi";
+import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 
 const socials = [
-  // {
-  //   icon: <BiLogoFacebook />,
-  //   path: "",
-  // },
-  // {
-  //   icon: <BiLogoInstagramAlt />,
-  //   path: "",
-  // },
-  {
-    icon: <BiLogoDribbble />,
-    path: "",
-  },
   {
     icon: <BiLogoLinkedin />,
-    path: "",
+    path: "https://www.linkedin.com/in/kalle-bjorfors/",
   },
   {
     icon: <BiLogoGithub />,
-    path: "",
+    path: "https://github.com/Karlbjorfors",
   },
 ];
 

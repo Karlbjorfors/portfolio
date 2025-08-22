@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import { CiMenuFries } from "react-icons/ci";
-import { MdFileDownload } from "react-icons/md";
+import DownloadCV from "./DownloadCV";
 //components
 import {
   Sheet,
@@ -41,12 +41,7 @@ const Header = () => {
               </SheetHeader>
               <NavLinks containerStyles="flex flex-col gap-8 max-w-[100px]" />
               <div>
-                <button className="btn btn-lg btn-white mb-16">
-                  <div className="flex items-center gap-3">
-                    <span>Download CV</span>
-                    <MdFileDownload className="text-xl" />
-                  </div>
-                </button>
+                <DownloadCV />
                 <Socials
                   containerStyles="flex gap-4"
                   iconStyles="bg-accent text-white hover:bg-accent-hover transition w-[40px] h-[40px] text-[20px] flex items-center justify-center rounded-full cursor-pointer"
