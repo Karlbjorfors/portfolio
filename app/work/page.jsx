@@ -21,11 +21,20 @@ const projects = [
     id: 1,
     category: "frontend",
     title: "Portfolio",
-    description: "A personal portfolio website to showcase my work and skills.",
+    description: `A sleek, modern portfolio website built to showcase my fullstack development skills and demonstrate my growth as a developer to potential employers. Designed with a focus on user experience and modern aesthetics, this responsive web application highlights my expertise in cutting-edge technologies including Next.js, React, TypeScript, and Tailwind CSS.
+    The portfolio features an intuitive interface with smooth animations powered by Framer Motion, interactive project galleries using Swiper.js, and seamless navigation across all devices. Built with modern development practices including component-based architecture, accessibility-first design using Shadcn UI, and optimized performance through Next.js server-side rendering.
+    This project demonstrates my ability to create professional, production-ready applications while showcasing my journey toward becoming a fullstack developer with interests in AI implementations and modern web technologies.`,
     image: "/assets/work/portfolio.png",
     link: "",
     github: "https://github.com/Karlbjorfors/portfolio.git",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vercel Analytics",
+      "Swiper.js",
+      "Shadcn UI",
+    ],
   },
   {
     id: 2,
