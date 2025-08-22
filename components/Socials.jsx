@@ -1,4 +1,5 @@
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
+import Link from "next/link";
 
 const socials = [
   {
@@ -16,9 +17,15 @@ const Socials = ({ containerStyles, iconStyles }) => {
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <div key={index} className={iconStyles}>
+          <Link
+            key={index}
+            href={item.path}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={iconStyles}
+          >
             {item.icon}
-          </div>
+          </Link>
         );
       })}
     </div>

@@ -27,7 +27,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-8 xl:gap-0">
           {/* text */}
           <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left">
-            <h1 className="h1 flex-1 my-6">
+            <h1 className="h1 flex-1 mb-[28px]">
               Hi! I'm Kalle, <br />
               <TypeAnimation
                 sequence={["Fullstack Developer", 2000, "Web Designer", 2000]}
@@ -43,7 +43,7 @@ const Home = () => {
               looking for an internship that will be my first step into the
               industry.
             </p>
-            <p className="max-w-[500px] mb-6 text-sm sm:text-base">
+            <p className="max-w-[500px] mb-8 text-sm sm:text-base">
               I'm proficient in HTML, CSS, JavaScript, Python and C#, and eager
               to contribute to projects where user experience takes center
               stage. With a background as both a chef and a teacher, I'm used to

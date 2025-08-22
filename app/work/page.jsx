@@ -140,7 +140,7 @@ const Work = () => {
             })}
           </TabsList>
           {/* tabs content */}
-          <div className="h-[400px] xl:h-[560px]">
+          <div className="h-[500px] xl:h-[560px]">
             {categories.map((category) => {
               return (
                 <TabsContent key={category} value={category}>
@@ -157,9 +157,9 @@ const Work = () => {
                       .map((project) => {
                         return (
                           <SwiperSlide key={project.id} className="h-full">
-                            <div className="flex flex-col xl:flex-row gap-8 xl:gap-12 h-full">
+                            <div className="flex flex-col xl:flex-row gap-8 xl:gap-12 h-full overflow-y-auto scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 pr-2">
                               {/* project info */}
-                              <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-none max-h-[400px] xl:max-h-[500px] overflow-y-auto scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 pr-2">
+                              <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-none max-h-[500px] xl:max-h-[500px]">
                                 {/* title */}
                                 <h3 className="h3">{project.title}</h3>
                                 {/* description */}
@@ -181,29 +181,29 @@ const Work = () => {
                                       );
                                     })}
                                   </ul>
-                                </div>
-                                {/*  btns */}
-                                <div className="flex flex-col sm:flex-row gap-4 items-start mt-4">
-                                  {project.link && (
-                                    <Link href={project.link}>
-                                      <button className="btn btn-sm btn-accent flex gap-2">
-                                        <MdArrowOutward className="text-xl" />
-                                        <span>Live Project</span>
-                                      </button>
-                                    </Link>
-                                  )}
-                                  {project.github && (
-                                    <Link href={project.github}>
-                                      <button className="btn btn-sm btn-white flex gap-2">
-                                        <FaGithub className="text-xl" />
-                                        <span>Github Repository</span>
-                                      </button>
-                                    </Link>
-                                  )}
+                                  {/*  btns */}
+                                  <div className="flex flex-col sm:flex-row gap-4 items-start mt-4">
+                                    {project.link && (
+                                      <Link href={project.link}>
+                                        <button className="btn btn-sm btn-accent flex gap-2">
+                                          <MdArrowOutward className="text-xl" />
+                                          <span>Live Project</span>
+                                        </button>
+                                      </Link>
+                                    )}
+                                    {project.github && (
+                                      <Link href={project.github}>
+                                        <button className="btn btn-sm btn-white flex gap-2">
+                                          <FaGithub className="text-xl" />
+                                          <span>Github Repository</span>
+                                        </button>
+                                      </Link>
+                                    )}
+                                  </div>
                                 </div>
                               </div>
                               {/* project img */}
-                              <div className="w-full h-[200px] md:h-[400px] xl:h-[500px] relative bg-pink-50/10 order-1 xl:order-none rounded-lg overflow-hidden">
+                              <div className="w-full sm:hidden md:h-[400px] xl:h-[500px] relative bg-pink-50/10 order-1 xl:order-none rounded-lg overflow-hidden">
                                 <Image
                                   src={project.image}
                                   alt={project.image}
