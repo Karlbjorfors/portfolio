@@ -28,7 +28,7 @@ const projects = [
     tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
   {
-    id: 2,
+    id: 3,
     category: "fullstack",
     title: "FiJoKa",
     description: "A personal portfolio website to showcase my work and skills.",
@@ -45,7 +45,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     category: "fullstack",
     title: "ScanTheScam",
     description:
@@ -60,7 +60,7 @@ const projects = [
       "Entity Framewok",
       "RESTful APIs",
       "Cloud/AI",
-      "Authentication & Security (JWT)",
+      "Authentication(JWT)",
     ],
   },
   {
@@ -146,7 +146,7 @@ const Work = () => {
         </h2>
         {/* tabs */}
         <Tabs
-          defaultValue="frontend"
+          defaultValue="fullstack"
           className="w-full flex flex-col gap-6 xl:gap-12"
         >
           {/* tabs list */}
@@ -164,23 +164,26 @@ const Work = () => {
             })}
           </TabsList>
           {/* tabs content */}
-          <div className="h-[400px] scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
+          <div className="h-[400px] xl:h-[560px]">
             {categories.map((category) => {
               return (
                 <TabsContent key={category} value={category}>
                   <Swiper
                     modules={[Pagination]}
-                    pagination={{ clickable: true, dynamicBullets: true }}
-                    className="h-max xl:h-[560px]"
+                    pagination={{
+                      clickable: true,
+                      dynamicBullets: true,
+                    }}
+                    className="h-full [&_.swiper-pagination]:!bottom-5 [&_.swiper-pagination-bullet]:!bg-white/50 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet-active]:!bg-accent"
                   >
                     {projects
                       .filter((project) => project.category === category)
                       .map((project) => {
                         return (
                           <SwiperSlide key={project.id} className="h-full">
-                            <div className="flex flex-col xl:flex-row gap-8 xl:gap-12">
+                            <div className="flex flex-col xl:flex-row gap-8 xl:gap-12 h-full">
                               {/* project info */}
-                              <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-none">
+                              <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-none max-h-[400px] xl:max-h-[500px] overflow-y-auto scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 pr-2">
                                 {/* title */}
                                 <h3 className="h3">{project.title}</h3>
                                 {/* description */}
@@ -188,7 +191,7 @@ const Work = () => {
                                   {project.description}
                                 </p>
                                 {/* tech */}
-                                <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
+                                <div className="mb-6 max-w-[300px]">
                                   <p className="mb-4">Technologies Used</p>
                                   <ul className="flex flex-wrap gap-4">
                                     {project.tech.map((item, index) => {
@@ -204,23 +207,27 @@ const Work = () => {
                                   </ul>
                                 </div>
                                 {/*  btns */}
-                                <div className="flex flex-col sm:flex-row gap-4 items-start">
-                                  <Link href={project.link}>
-                                    <button className="btn btn-sm btn-accent flex gap-2">
-                                      <MdArrowOutward className="text-xl" />
-                                      <span>Live Project</span>
-                                    </button>
-                                  </Link>
-                                  <Link href={project.github}>
-                                    <button className="btn btn-sm btn-white flex gap-2">
-                                      <FaGithub className="text-xl" />
-                                      <span>Github Repository</span>
-                                    </button>
-                                  </Link>
+                                <div className="flex flex-col sm:flex-row gap-4 items-start mt-4">
+                                  {project.link && (
+                                    <Link href={project.link}>
+                                      <button className="btn btn-sm btn-accent flex gap-2">
+                                        <MdArrowOutward className="text-xl" />
+                                        <span>Live Project</span>
+                                      </button>
+                                    </Link>
+                                  )}
+                                  {project.github && (
+                                    <Link href={project.github}>
+                                      <button className="btn btn-sm btn-white flex gap-2">
+                                        <FaGithub className="text-xl" />
+                                        <span>Github Repository</span>
+                                      </button>
+                                    </Link>
+                                  )}
                                 </div>
                               </div>
                               {/* project img */}
-                              <div className="w-full h-[200px] md:h-[300px] xl:h-[400px] relative bg-pink-50/10 order-1 xl:order-none rounded-lg overflow-hidden">
+                              <div className="w-full h-[200px] md:h-[400px] xl:h-[500px] relative bg-pink-50/10 order-1 xl:order-none rounded-lg overflow-hidden">
                                 <Image
                                   src={project.image}
                                   alt={project.image}
