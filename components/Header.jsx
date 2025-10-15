@@ -17,9 +17,9 @@ import Socials from "./Socials";
 
 const Header = () => {
   return (
-    <header className="2xl:hidden absolute z-40 left-0 top-0 right-0">
+    <header className="2xl:hidden absolute z-40 left-0 top-0 right-0 bg-primary/95 backdrop-blur-sm">
       <div className="container mx-auto">
-        <div className="flex items-center justify-between py-6">
+        <div className="flex items-center justify-between py-8">
           {/* Logo go here */}
           <Logo />
           {/* Navigation mobile - (Sheet Component) Shadcn.com */}
@@ -32,7 +32,7 @@ const Header = () => {
               side="left"
             >
               <SheetHeader>
-                <SheetTitle>
+                <SheetTitle className="">
                   <Logo />
                 </SheetTitle>
                 <SheetDescription className="sr-only">

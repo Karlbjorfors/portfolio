@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
             </div>
             <div className="w-full max-w-[1130px] px-[15px] mx-auto">
               <Header />
-              <div>{children}</div>
+              <div className="2xl:mt-0 mt-20">{children}</div>
             </div>
           </div>
         </PageTransition>

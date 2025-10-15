@@ -39,9 +39,11 @@ const Home = () => {
               />
             </h1>
             <p className="max-w-[500px] mb-6 text-sm sm:text-base">
-              I'm currently training to become a fullstack developer and I'm
-              looking for an internship that will be my first step into the
-              industry.
+              I'm a newly graduated fullstack developer with hands-on experience
+              in both frontend and backend technologies. After completing my
+              training, I'm now actively looking for new opportunities where I
+              can apply my skills, contribute to development teams, and continue
+              growing as a developer.
             </p>
             <p className="max-w-[500px] mb-6 text-sm sm:text-base">
               I'm proficient in HTML, CSS, JavaScript, Python and C#, and eager
