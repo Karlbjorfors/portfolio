@@ -33,7 +33,7 @@ const Home = () => {
                 sequence={["Fullstack Developer", 2000, "Web Designer", 2000]}
                 wrapper="span"
                 speed={40}
-                className="text-accent inline-block w-full sm:w-52 md:w-60 lg:w-68 xl:w-76 2xl:w-80"
+                className="text-accent inline-block whitespace-nowrap"
                 repeat={Infinity}
                 cursor={false}
               />
